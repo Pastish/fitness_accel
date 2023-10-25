@@ -12,10 +12,19 @@ $color-transparent:                 rgba(255, 255, 255, 0);
 
 $color-neon-blue:                   #2c39f2;
 $color-torch-red:                   #ff1553;
+$color-sapphire:                    #102654;
+$color-egyptian-blue:               #103AAE;
+$color-resolution-blue:             #1C3374;
+$color-crimson:                     #D10A42;
+$color-ghost-white:                 #F8F9FC;
+$color-banner-torch-red:            #ED0233;
+$color-black-russian:               #030A1A;
+$color-alert-torch-red:             #FF121F;
 
 // Gradient
 
-$black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+$red-to-blue:                     rgba(237, 2, 51, 1), rgba(0, 62, 183, 1);
+$blue-to-red:                     rgba(28, 52, 119, 1), rgba(28, 52, 119, 1), rgba(26, 53, 120, 1), rgba(115, 24, 75, 1), rgba(180, 2, 42, 1);
 
 // Typography
 // ---------------------------------

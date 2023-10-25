@@ -1239,7 +1239,7 @@ button,
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
-  padding: 30px 103px;
+  padding: 30px 103px 120px;
 }
 @media (max-width: 1365px) {
   .header__wrapper {
@@ -1259,6 +1259,7 @@ button,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .header__description {
@@ -1268,6 +1269,7 @@ button,
 }
 
 .header__title {
+  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1276,10 +1278,28 @@ button,
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 0 70px 152px 115px;
+  min-height: 400px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .header__description-list {
   position: absolute;
+  left: 103px;
+  top: 315px;
+}
+
+.header__tel {
+  color: #ffffff;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 26px;
 }
 
 /* @mixin hover-focus {
