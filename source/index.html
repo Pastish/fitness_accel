@@ -15,7 +15,7 @@
             <a class="header__logo-main" href="#">
               <img src="img/supergym.png" width="120" height="26" alt="логотип SUPERGYM-фитнесс">
             </a>
-            <a href="tel:+78005555555">8-800-555-55-55</a>
+            <a class="header__tel" href="tel:+78005555555">8-800-555-55-55</a>
           </div>
           <div class="header__description">
             <div class="header__title">
@@ -62,40 +62,29 @@
             <button></button>
           </div>
         </section>
+        <section class="subscription">
+          <h2>Абонементы</h2>
+          <nav class="subscription__nav">
+            <button class="subscription__nav-button">1 месяц</button>
+            <button class="subscription__nav-button">6 месяцев</button>
+            <button class="subscription__nav-button">12 месяцев</button>
+          </nav>
+          <ul class="subscription__list">
+            <li class="subscription__item">
+              <h3>С тренером</h3>
+              <p class="subscription__activities">12 занятий</p>
+              <p class="subscription__price">5000
+                <span class="subscription__rouble"></span>
+                <span class="subscription__shadow-price">5000</span>
+              </p>
+              <a class="button" href="#">купить абонемент</a>
+            </li>
+          </ul>
+        </section>
       </main>
       <footer>
         <div class="container"></div>
       </footer>
-
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>

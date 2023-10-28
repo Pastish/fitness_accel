@@ -35,7 +35,6 @@
 
   @include vp-767 {
     margin-bottom: 51px;
-    gap: 33px;
   }
 }
 
@@ -135,6 +134,18 @@
   }
 }
 
+.header__tel {
+  width: 183px;
+
+  @include vp-1365 {
+   width: 169px;
+  }
+
+  @include vp-767 {
+    width: 155px;
+  }
+}
+
 .header__logo a {
   color: $color-default-white;
   font-family: $ff-secondary;
@@ -172,4 +183,8 @@
   @include vp-767 {
     display: none;
   }
+}
+
+.subscription__rouble {
+  font-family: $ff-rouble;
 }
