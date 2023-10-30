@@ -13,7 +13,7 @@
 @import "global/fonts";
 @import "global/reboot";
 @import "global/utils";
-@import "global/container";
+@import "global/wrapper";
 
 // Blocks
 // ---------------------------------
@@ -25,7 +25,9 @@
 @import "blocks/custom-select";
 @import "blocks/main.scss";
 @import "blocks/header.scss";
-@import "blocks/about.scss"
+@import "blocks/about.scss";
+@import "blocks/video.scss";
+@import "blocks/subscription.scss";
 
 // ---------------------------------
 

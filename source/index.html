@@ -52,36 +52,56 @@
             <img src="img/content/gym.jpg" width="660" height="401" srcset="img/content/gym@2x.jpg 2x" alt="Фото тренажерного зала.">
           </picture>
           <div class="about__video">
-            <a class="about__video-link">
-              <picture>
-                <source media="(max-width: 767px)" srcset="img/content/background-mobile.jpg 1x, img/content/background-mobile@2x.jpg 2x" type="image/jpeg">
-                <source media="(max-width: 1365px)" srcset="img/content/background-tablet.jpg 1x, img/content/background-tablet@2x.jpg 2x" type="image/jpeg">
-                <img src="img/content/background-cover.jpg" width="364" height="228" srcset="img/content/background-cover@2x.jpg 2x" alt="">
-              </picture>
-            </a>
-            <button></button>
+            <div class="video video--enabled">
+              <a class="about__video-link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="img/content/background-mobile.jpg 1x, img/content/background-mobile@2x.jpg 2x" type="image/jpeg">
+                  <source media="(max-width: 1365px)" srcset="img/content/background-tablet.jpg 1x, img/content/background-tablet@2x.jpg 2x" type="image/jpeg">
+                  <img class="video__media" src="img/content/background-cover.jpg" width="364" height="228" srcset="img/content/background-cover@2x.jpg 2x" alt="">
+                </picture>
+              </a>
+              <button class="video__button" aria-label="Посмотреть видео"></button>
+            </div>
           </div>
         </section>
         <section class="subscription">
-          <h2>Абонементы</h2>
-          <nav class="subscription__nav">
-            <button class="subscription__nav-button">1 месяц</button>
-            <button class="subscription__nav-button">6 месяцев</button>
-            <button class="subscription__nav-button">12 месяцев</button>
-          </nav>
-          <ul class="subscription__list">
-            <li class="subscription__item">
-              <h3>С тренером</h3>
-              <p class="subscription__activities">12 занятий</p>
-              <p class="subscription__price">5000
-                <span class="subscription__rouble"></span>
-                <span class="subscription__shadow-price">5000</span>
-              </p>
-              <a class="button" href="#">купить абонемент</a>
-            </li>
-          </ul>
+            <h2>Абонементы</h2>
+            <nav class="subscription__nav">
+              <button class="subscription__nav-button">1 месяц</button>
+              <button class="subscription__nav-button">6 месяцев</button>
+              <button class="subscription__nav-button">12 месяцев</button>
+            </nav>
+            <ul class="subscription__list">
+              <li class="subscription__item">
+                <h3>С тренером</h3>
+                <p class="subscription__activities">12 занятий</p>
+                <p class="subscription__price">5000
+                  <span class="subscription__rouble">p</span>
+                  <span class="subscription__shadow-price">5000</span>
+                </p>
+                <a class="button" href="#">купить абонемент</a>
+              </li>
+              <li class="subscription__item">
+                <h3>Дневной</h3>
+                <p class="subscription__activities">с 8:00 до 17:00</p>
+                <p class="subscription__price">1700
+                  <span class="subscription__rouble">p</span>
+                  <span class="subscription__shadow-price">1700</span>
+                </p>
+                <a class="button" href="#">купить абонемент</a>
+              </li>
+              <li class="subscription__item">
+                <h3>Полный день</h3>
+                <p class="subscription__activities">с 8:00 до 22:00</p>
+                <p class="subscription__price">2700
+                  <span class="subscription__rouble">p</span>
+                  <span class="subscription__shadow-price">2700</span>
+                </p>
+                <a class="button" href="#">купить абонемент</a>
+              </li>
+            </ul>
         </section>
-      </main>
+        </main>
       <footer>
         <div class="container"></div>
       </footer>
