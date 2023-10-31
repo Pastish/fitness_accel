@@ -47,6 +47,12 @@
   font-weight: 700;
   line-height: 12px;
   letter-spacing: 0.6px;
+
+  @include hover {
+    border: 0;
+    color: $color-default-white;
+    background: linear-gradient(97.05deg, $red-to-blue);
+  }
 }
 
 .subscription__nav-button {
@@ -58,5 +64,15 @@
   font-size: 20px;
   line-height: 20px;
   cursor: pointer;
-  margin-bottom: 14px;
+  padding: 0 0 14px;
+
+  @include vp-1365 {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }

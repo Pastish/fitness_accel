@@ -12,10 +12,12 @@
     flex-direction: column;
     align-items: center;
     padding: 100px 45px;
+    margin-bottom: 100px;
   }
 
   @include vp-767 {
     padding: 70px 0;
+    margin-bottom: 87px;
   }
 }
 
@@ -59,6 +61,16 @@
   font-size: 22px;
   line-height: 22px;
   margin: 0 0 95px;
+
+  @include vp-1365 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 .about__text p {
