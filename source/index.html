@@ -62,15 +62,16 @@
             </div>
           </div>
         </section>
-        <section class="subscription">
+        <section class="subscription" data-tabs="parent">
             <h2>Абонементы</h2>
-            <nav class="subscription__nav">
-              <button class="subscription__nav-button">1 месяц</button>
-              <button class="subscription__nav-button">6 месяцев</button>
-              <button class="subscription__nav-button">12 месяцев</button>
+            <nav class="subscription__nav" data-tabs="controls">
+              <button class="subscription__nav-button"  data-tabs="control">1 месяц</button>
+              <button class="subscription__nav-button"  data-tabs="control">6 месяцев</button>
+              <button class="subscription__nav-button"  data-tabs="control">12 месяцев</button>
             </nav>
-            <ul class="subscription__list">
-              <li class="subscription__item">
+          <div class="subscription__lists"  data-tabs="content">
+            <ul class="subscription__list" data-tabs="element">
+              <li class="subscription__item" tabindex="0">
                 <h3>С тренером</h3>
                 <p class="subscription__activities">12 занятий</p>
                 <p class="subscription__price">5000
@@ -79,7 +80,7 @@
                 </p>
                 <a class="button" href="#">купить абонемент</a>
               </li>
-              <li class="subscription__item">
+              <li class="subscription__item" tabindex="0">
                 <h3>Дневной</h3>
                 <p class="subscription__activities">с 8:00 до 17:00</p>
                 <p class="subscription__price">1700
@@ -88,7 +89,7 @@
                 </p>
                 <a class="button" href="#">купить абонемент</a>
               </li>
-              <li class="subscription__item">
+              <li class="subscription__item" tabindex="0">
                 <h3>Полный день</h3>
                 <p class="subscription__activities">с 8:00 до 22:00</p>
                 <p class="subscription__price">2700
@@ -98,6 +99,65 @@
                 <a class="button" href="#">купить абонемент</a>
               </li>
             </ul>
+            <ul class="subscription__list" data-tabs="element">
+              <li class="subscription__item" tabindex="0">
+                <h3>С тренером</h3>
+                <p class="subscription__activities">12 занятий</p>
+                <p class="subscription__price">30000
+                  <span class="subscription__rouble">p</span>
+                  <span class="subscription__shadow-price">30000</span>
+                </p>
+                <a class="button" href="#">купить абонемент</a>
+              </li>
+              <li class="subscription__item" tabindex="0">
+                <h3>Дневной</h3>
+                <p class="subscription__activities">с 8:00 до 17:00</p>
+                <p class="subscription__price">10200
+                  <span class="subscription__rouble">p</span>
+                  <span class="subscription__shadow-price">10200</span>
+                </p>
+                <a class="button" href="#">купить абонемент</a>
+              </li>
+              <li class="subscription__item" tabindex="0">
+                <h3>Полный день</h3>
+                <p class="subscription__activities">с 8:00 до 22:00</p>
+                <p class="subscription__price">16200
+                  <span class="subscription__rouble">p</span>
+                  <span class="subscription__shadow-price">16200</span>
+                </p>
+                <a class="button" href="#">купить абонемент</a>
+              </li>
+            </ul>
+            <ul class="subscription__list" data-tabs="element">
+              <li class="subscription__item" tabindex="0">
+                <h3>С тренером</h3>
+                <p class="subscription__activities">12 занятий</p>
+                <p class="subscription__price">60000
+                  <span class="subscription__rouble">p</span>
+                  <span class="subscription__shadow-price">60000</span>
+                </p>
+                <a class="button" href="#">купить абонемент</a>
+              </li>
+              <li class="subscription__item" tabindex="0">
+                <h3>Дневной</h3>
+                <p class="subscription__activities">с 8:00 до 17:00</p>
+                <p class="subscription__price">20400
+                  <span class="subscription__rouble">p</span>
+                  <span class="subscription__shadow-price">20400</span>
+                </p>
+                <a class="button" href="#">купить абонемент</a>
+              </li>
+              <li class="subscription__item" tabindex="0">
+                <h3>Полный день</h3>
+                <p class="subscription__activities">с 8:00 до 22:00</p>
+                <p class="subscription__price">32400
+                  <span class="subscription__rouble">p</span>
+                  <span class="subscription__shadow-price">32400</span>
+                </p>
+                <a class="button" href="#">купить абонемент</a>
+              </li>
+            </ul>
+          </div>
         </section>
         </main>
       <footer>

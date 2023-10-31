@@ -34,3 +34,29 @@
     background-color: $color-default-white;
   }
 }
+
+.button {
+  font-family: $ff-secondary;
+  text-transform: uppercase;
+  padding: 27px 44px;
+  border: 2px solid $color-sapphire;
+  min-width: 205px;
+  margin: 0 auto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0.6px;
+}
+
+.subscription__nav-button {
+  position: relative;
+  font-family: $ff-secondary;
+  border: none;
+  background-color: transparent;
+  color: $color-sapphire;
+  font-size: 20px;
+  line-height: 20px;
+  cursor: pointer;
+  margin-bottom: 14px;
+}

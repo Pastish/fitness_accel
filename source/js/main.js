@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {setupVideo} from './video';
+import {initTabs} from './tabs.js';
 
 // ---------------------------------
 
@@ -20,6 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     setupVideo();
     initModals();
+    initTabs();
     const form = new Form();
     window.form = form;
     form.init();
