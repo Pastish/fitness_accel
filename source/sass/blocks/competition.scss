@@ -32,17 +32,11 @@
   margin: 0;
 }
 
-.competition__date-title {
-  font-family: $ff-secondary;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 24px;
-}
-
-.competition__date-meeting-mounth {
+.competition__date-meeting-month {
   font-family: $ff-secondary;
   font-size: 14px;
   font-weight: 400;
+  margin: 0;
   line-height: 14px;
 }
 
@@ -51,21 +45,32 @@
   font-size: 40px;
   font-weight: 700;
   line-height: 40px;
+  margin: 0;
 }
 
-.competition__date-meeting {
+.competition__date-item {
   display: grid;
   grid-template-columns: repeat(2,min-content);
-  align-items: center;
+}
+
+.competition__date-title {
+  font-family: $ff-secondary;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  grid-column: 1/3;
 }
 
 .competition__date-meeting-day {
-  grid-row: 1/3;
+  grid-row: 2/3;
   font-size: 40px;
+  margin: 0;
+  margin-right: 10px;
 }
 
 .competition__date-meeting-year {
   grid-column: 2/3;
+  margin: 0;
 }
 
 .competition__date-item {

@@ -2,8 +2,8 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {setupVideo} from './video';
-import {initTabs} from './tabs.js';
-
+// import {initTabs} from './tabs.js';
+import './vendor/swiper';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -21,13 +21,37 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     setupVideo();
     initModals();
-    initTabs();
+    // initTabs();
     const form = new Form();
     window.form = form;
     form.init();
   });
 });
 
+if (document.querySelector('.jury__slider')) {
+  // eslint-disable-next-line no-new, no-undef
+  new Swiper('.jury__slider', {
+    observer: true,
+    slidesPerView: 4,
+    loop: true,
+    spaceBetween: 34,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1366: {
+        slidesPerView: 4,
+      },
+    },
+  });
+}
 // ---------------------------------
 
 // ❗❗❗ обязательно установите плагины eslint, stylelint, editorconfig в редактор кода.
