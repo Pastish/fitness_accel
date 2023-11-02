@@ -2,7 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {setupVideo} from './video';
-// import {initTabs} from './tabs.js';
+import {initTabs} from './tabs.js';
 import './vendor/swiper';
 // ---------------------------------
 
@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     setupVideo();
     initModals();
-    // initTabs();
+    initTabs();
     const form = new Form();
     window.form = form;
     form.init();
@@ -34,10 +34,10 @@ if (document.querySelector('.jury__slider')) {
     observer: true,
     slidesPerView: 4,
     loop: true,
-    spaceBetween: 34,
+    spaceBetween: 40,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.jury__button-next',
+      prevEl: '.jury__button-prev',
     },
     breakpoints: {
       320: {
