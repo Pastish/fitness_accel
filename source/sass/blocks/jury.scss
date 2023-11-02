@@ -1,7 +1,15 @@
+.jury {
+  position: relative;
+}
+
+.jury__wrapper {
+  padding: 0 50px 120px;
+}
+
 .jury__list {
   display: flex;
-  gap: 30px;
-
+  min-width: 0;
+  height: 294px;
 }
 
 .jury__container {
@@ -10,9 +18,15 @@
   max-width: 1366px;
   margin: 0 auto;
   padding: 0 40px;
-  position: relative;
 }
 
-.jury__item {
-  width: 60px;
+.jury__button-next {
+  position: absolute;
+  right: 55px;
+  background-color: tomato;
+}
+
+.jury__item img {
+  width: 100%;
+  object-fit: cover;
 }
