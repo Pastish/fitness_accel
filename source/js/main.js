@@ -34,7 +34,6 @@ if (document.querySelector('.jury__slider')) {
     observer: true,
     slidesPerView: 4,
     loop: true,
-    spaceBetween: 40,
     navigation: {
       nextEl: '.jury__button-next',
       prevEl: '.jury__button-prev',
@@ -42,12 +41,15 @@ if (document.querySelector('.jury__slider')) {
     breakpoints: {
       320: {
         slidesPerView: 1,
+        spaceBetween: 20,
       },
       768: {
         slidesPerView: 2,
+        spaceBetween: 32,
       },
       1366: {
         slidesPerView: 4,
+        spaceBetween: 40,
       },
     },
   });
